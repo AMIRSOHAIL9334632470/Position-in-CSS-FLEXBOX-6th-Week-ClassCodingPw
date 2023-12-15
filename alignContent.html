@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-Content</title>
+</head>
+<style>
+     .container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    color: aliceblue;
+    height: 10vh;
+  } 
+.item{
+    width: 50px;
+    border: 1px solid black;
+    background-color: #0c2186c3;
+}
+.strech{
+    align-content: stretch;
+}
+.around{
+    align-content: space-around;
+}
+.between{
+    align-content: space-between;
+}
+.start{
+    align-content: flex-start;
+}
+.end{
+    align-content:flex-end;
+}
+.evenly{
+    align-content:space-evenly;
+}
+</style>
+<body>
+    <!-- strectch is the default value of align-Content -->
+    <p>align-content:stretch(default)</p>
+    <div class="container stretch">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <p>align-content:space-around</p>
+    <div class="container around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <p>align-content:space-between</p>
+    <div class="container between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <p>align-content:center</p>
+    <div class="container around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <p>align-content:flex-start</p>
+    <div class="container start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <p>align-content:space-evenly</p>
+    <div class="container evenly">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+    <p>align-content:flex-end</p>
+    <div class="container end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+</html>
